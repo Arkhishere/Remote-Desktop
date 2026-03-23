@@ -1,38 +1,59 @@
-# Remote Desktop
-
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![Version](https://img.shields.io/badge/version-1.0.0-orange)
+# Apollo Remote Desktop
 
 ## Project Overview
-Remote Desktop is a high-performance application that allows users to connect to a remote computer and control it as if they were physically present at that machine. This is ideal for IT support and remote access to workstations.
+Apollo Remote Desktop is a revolutionary remote access solution that provides low-latency, high-performance connection using cutting-edge technologies. This project allows seamless remote desktop access with superior performance, tailored for both personal and professional use.
 
-## High-Performance Mode
-This application supports a high-performance mode that optimizes the connection for bandwidth constraints, allowing smoother and faster interaction. This mode is especially useful in low-bandwidth scenarios or for mobile devices.
+## High-Performance Modes
+### Moonlight Mode
+Designed for games and real-time applications, Moonlight Mode optimizes performance with minimal latency.
+
+### Sunshine Mode
+Sunshine Mode focuses on delivering superior graphics and smooth interfaces for productivity tasks.
 
 ## Setup Instructions
-1. **Clone the Repository**  
-   Run the following command to clone the repository:
+### Prerequisites
+Ensure you have the following installed on your machine:
+1. **Node.js** (version 18 or higher)
+2. **pnpm** package manager
+
+### Detailed Setup and Installation Steps
+1. Clone the repository:
    ```bash
    git clone https://github.com/Arkhishere/Remote-Desktop.git
    cd Remote-Desktop
    ```
-2. **Install Dependencies**  
-   Make sure you have all the required dependencies installed. Run:
+2. Install dependencies using pnpm:
    ```bash
-   npm install
+   pnpm install
    ```
-3. **Run the Application**  
-   Start the application by running:
+3. Create a `.env` file in the root of the project with the following configurations:
+   ```env
+   PORT=3000
+   SIGNALING_PORT=8080
+   SECRET_KEY=your_secret_key_here
+   ```
+   Replace `your_secret_key_here` with a secure key of your choice.
+4. Start the application:
    ```bash
-   npm start
+   pnpm start
    ```
-   Open your browser and navigate to `http://localhost:3000`.
 
 ## Networking and Architecture
-The architecture of Remote Desktop is built on a client-server model. The server handles the remote connections, while the client interface communicates with it. The data flows through secure WebSocket connections, ensuring low latency and high throughput.
+### P2P WebRTC Handshake Mechanism
+The architecture leverages a P2P WebRTC handshake mechanism to establish direct connections between clients, optimizing the data exchange for speed and efficiency.
 
-### Components:
-- **Client:** The interface used by the user to initiate connections to remote machines.
-- **Server:** The application responsible for managing connections and relaying data between the client and remote desktop.
+### Networking Tips
+For optimal connectivity, ensure the following ports are open:
+- **TCP**: 3000, 8080  
+- **UDP**: 47998-48010
 
-## Footer
-For more information, please refer to the official documentation or contact support at support@arkhishere.com.
+For users behind strict NATs or firewalls, consider using VPN tunnels like **Tailscale** to facilitate connectivity.
+
+## Contributing
+We welcome contributions! Please follow these guidelines:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request with a detailed description of your changes.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
