@@ -1,34 +1,15 @@
-# Apollo Remote Desktop
+# README
 
-Welcome to the Apollo Remote Desktop project! This project aims to provide a seamless and efficient remote desktop experience, allowing users to connect to their computers from anywhere in the world.
+## Moonlight/Sunshine Protocol Support
 
-## Features
-- **High Performance**: Optimized for speed and responsiveness.
-- **Secure Connections**: Implements industry-standard encryption protocols for data safety.
-- **Cross-Platform Support**: Compatible with Windows, Mac, and Linux.
-- **User-Friendly Interface**: Designed for ease of use without compromising functionality.
-- **File Transfer Capability**: Easily transfer files between local and remote desktop.
+This software now includes support for the Moonlight and Sunshine protocols, enhancing your remote desktop experience with advanced streaming capabilities.
 
-## Installation
-To install Apollo Remote Desktop, follow these simple steps:
-1. Download the latest version from our [releases](https://github.com/Arkhishere/Remote-Desktop/releases).
-2. Run the installer and follow the instructions.
-3. Once installed, launch the application and set up your remote connections.
+## Key Features
+- **Ultra-low Latency Gaming:** Enjoy responsive gameplay with optimizations for minimal delay.
+- **Sunshine Integration:** Seamlessly connect with Sunshine for an enriched streaming experience.
+- **Hardware Acceleration:** Leverage hardware capabilities to maximize performance and efficiency.
 
-## Usage
-1. Open Apollo Remote Desktop.
-2. Enter the IP address or hostname of the remote computer.
-3. Connect using your credentials.
-4. Enjoy the remote session!
+## Architecture
 
-## Contribution
-We welcome contributions! Please refer to our [Contributing Guidelines](https://github.com/Arkhishere/Remote-Desktop/CONTRIBUTING.md) for more information on how to get involved.
+The architecture of this software is designed to bridge web access with the Moonlight high-speed streaming protocol, enabling users to access their desktops with exceptional speed and reliability. Apollo acts as an intermediary, providing seamless connectivity and a robust framework for streaming.
 
-## Support
-If you have any questions or issues, please check our [FAQ](https://github.com/Arkhishere/Remote-Desktop/FAQ.md) or reach out to our support team.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/Arkhishere/Remote-Desktop/LICENSE) file for details.
-
-## Acknowledgements
-Thank you to all contributors and users who make Apollo Remote Desktop possible!
